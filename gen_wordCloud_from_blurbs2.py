@@ -27,7 +27,7 @@ def gen_wordCloud_from_blurbs2(blurb,item_title,ax):
     # lower max_font_size
     wordcloud = WordCloud(max_font_size=30).generate(text)
     #plt.figure(figsize=(10,6))
-    ax.set_title(item_title,size=16)
+    ax.set_title(item_title,size=24)
     ax.imshow(wordcloud, interpolation="bilinear")
     ax.axis("off")
     #plt.show()
