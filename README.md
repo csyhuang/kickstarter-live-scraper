@@ -57,7 +57,7 @@ The returned object will be a pandas DataFrame that lists the number of unique p
 14         Theater                  12
 ``` 
  
-# Python package dependencies:
+# Python package dependencies
 - pandas
 - BeautifulSoup  
 - urllib  
