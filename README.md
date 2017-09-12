@@ -1,19 +1,11 @@
 # kickstarter-live-scraper
 
 This module scraps the project details on kickstarter.com on all the category pages and store 
-them in MySQL database using the *sqlalchemy* interface.
-
-Python package dependencies:  
-- pandas
-- BeautifulSoup  
-- urllib  
-- re  
-- sqlalchemy  
-- sqlalchemy_utils
-- time
+them in MySQL database using the *sqlalchemy* interface. You can refer to my [blog post](https://csyhuang.github.io/2017/09/09/install-mysql/) 
+on how to set up MySQL on Mac OS X.
 
 The script *Kickstarter-scraper-to-MySQL.py* can be run alone with the path of MySQL database,
- username and password specified. Here is an example:
+ username and password specified (see lines 170-190). Here is an example how to call the function *kickstarter_scraper*:
  
 ```python
 
@@ -44,7 +36,7 @@ kickstarter_scraper(engine, table_name_prefix,
 ```
 
 The returned object will be a pandas DataFrame that lists the number of unique projects for
- each category in the MySQL database, e.g.
+ each category in your MySQL database, e.g.
  
 ```
           Category  Number of Projects
@@ -65,3 +57,12 @@ The returned object will be a pandas DataFrame that lists the number of unique p
 14         Theater                  12
 ``` 
  
+# Python package dependencies:
+- pandas
+- BeautifulSoup  
+- urllib  
+- re  
+- sqlalchemy  
+- sqlalchemy_utils
+- time
+
