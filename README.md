@@ -29,15 +29,9 @@ user_password = 'password'  # Password
 engine = create_engine("mysql+pymysql://%s:%s@localhost:3306/%s?charset=utf8"
                        % (user_id, user_password, dbname), encoding='utf8')
 
-# The name / prefix of table that stores the data
-table_name_prefix = 'kickstarter'
-
-# Whether to build a new table with date as its name,
-# e.g. kickstarter_20170912
-separate_table_for_each_day = False
-
-# Drop existing table when running the code
-restart_drop_table = False
+table_name_prefix = 'kickstarter' # The name / prefix of table that stores the data
+separate_table_for_each_day = False # Whether to build a new table with date as its name, e.g. kickstarter_20170912
+restart_drop_table = False # Drop existing table when running the code
 
 # === Run the scraper ===
 kickstarter_scraper(engine, table_name_prefix,
