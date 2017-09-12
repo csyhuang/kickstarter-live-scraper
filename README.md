@@ -43,8 +43,8 @@ kickstarter_scraper(engine, table_name_prefix,
                         
 ```
 
-The returned object will be a pandas DataFrame that lists the number of unique projects in
- each category, e.g.
+The returned object will be a pandas DataFrame that lists the number of unique projects for
+ each category in the MySQL database, e.g.
  
 ```
           Category  Number of Projects
