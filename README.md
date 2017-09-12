@@ -19,6 +19,7 @@ The script *Kickstarter_scraper_to_MySQL.py* can be run alone with the path of M
  username and password specified (see lines 170-190). Here is an example how to call the function *kickstarter_scraper*:
  
 ```python
+from Kickstarter_scraper_to_MySQL import kickstarter_scraper
 
 # === Input parameters ===
 dbname = 'kickstarter_db'  # Name of your database
