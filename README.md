@@ -1,10 +1,10 @@
-### kickstarter-live-scraper
+## kickstarter-live-scraper
 
 This module scraps the project details on kickstarter.com on all the category pages and store 
 them in MySQL database using the *sqlalchemy* interface. You can refer to my [blog post](https://csyhuang.github.io/2017/09/09/install-mysql/) 
 on how to set up MySQL on Mac OS X.
 
-### Python package dependencies
+## Python package dependencies
 - pandas
 - BeautifulSoup  
 - urllib  
@@ -13,7 +13,7 @@ on how to set up MySQL on Mac OS X.
 - sqlalchemy_utils
 - time
 
-### How to use it
+## How to use it
 
 The script *Kickstarter_scraper_to_MySQL.py* can be run alone with the path of MySQL database,
  username and password specified (see lines 170-190). Here is an example how to call the function *kickstarter_scraper*:
