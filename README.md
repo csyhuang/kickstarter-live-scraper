@@ -4,6 +4,17 @@ This module scraps the project details on kickstarter.com on all the category pa
 them in MySQL database using the *sqlalchemy* interface. You can refer to my [blog post](https://csyhuang.github.io/2017/09/09/install-mysql/) 
 on how to set up MySQL on Mac OS X.
 
+# Python package dependencies
+- pandas
+- BeautifulSoup  
+- urllib  
+- re  
+- sqlalchemy  
+- sqlalchemy_utils
+- time
+
+# How to use it
+
 The script *Kickstarter-scraper-to-MySQL.py* can be run alone with the path of MySQL database,
  username and password specified (see lines 170-190). Here is an example how to call the function *kickstarter_scraper*:
  
@@ -40,29 +51,20 @@ The returned object will be a pandas DataFrame that lists the number of unique p
  
 ```
           Category  Number of Projects
-0              Art                 275
-1           Comics                  12
-2           Crafts                  12
-3            Dance                  23
-4           Design                  12
-5          Fashion                  12
-6   Film_and_Video                  12
-7             Food                  12
-8            Games                 513
-9       Journalism                  12
-10           Music                 191
-11     Photography                  90
-12      Publishing                  12
-13      Technology                  12
-14         Theater                  12
+0              Art                 299
+1           Comics                 163
+2           Crafts                 131
+3            Dance                  35
+4           Design                 515
+5          Fashion                 375
+6   Film_and_Video                 443
+7             Food                 270
+8            Games                 550
+9       Journalism                  73
+10           Music                 394
+11     Photography                 102
+12      Publishing                 452
+13      Technology                 558
+14         Theater                  78
 ``` 
  
-# Python package dependencies
-- pandas
-- BeautifulSoup  
-- urllib  
-- re  
-- sqlalchemy  
-- sqlalchemy_utils
-- time
-
